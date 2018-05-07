@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="https://www.smartosc.com/sites/all/themes/smartosc/logo.png" alt=""></a>
+			</div>
+		</div>
+	</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 main">
+			
+			<form action="<?php echo $this->getUrl('hello/world/insert'); ?>" class="contact col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12" method="POST">
+				<h1 class="title" id="page-title">How can we help you?</h1>
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 group-left">
+					<div class="form-left">
+						<input placeholder="Your Name*" required="required" type="text" id="edit-name" name="name" value="" size="50" maxlength="255" class="form-control">
+					</div>
+
+					<div class="form-right">
+						<input placeholder="Email Address*" required="required" type="text" id="edit-name" name="email" value="" size="50" maxlength="255" class="form-control">
+					</div>
+
+				</div>
+
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 group-right">
+					<div class="form-item form-type-textfield form-item-phone">
+					 	<div class="form-left">
+					 		<input placeholder="Phone Number" type="text" id="edit-phone" name="phone" value=""  class="form-control">
+					 		
+					 	</div>
+
+
+					 	<div class="form-right">
+					 		<input placeholder="Company" type="text" id="edit-phone" name="company" value=""  class="form-control">
+					 	</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 form-right">
+					<textarea name="message" placeholder="Your Message*" required="required"  id="" cols="80" rows="8"></textarea>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="form-actions form-wrapper" id="edit-actions"><input class="btn btn-default form-submit" type="submit" id="edit-submit" name="op" value="Send Message"></div></div>
+			</form>
+			
+		</div>
+	</div>
+</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+
+<layout version="0.0.1">
+	<default translate="label">
+		<label>All Pages</label><block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
+		<block type="page/html_head" name="head" as="head">
+	<action method="addItem">
+		<type>skin_css</type>
+		<name>css/thai.css</name>
+	</action><action method="addItem">
+	<type>skin_css</type>
+	<name>css/thai.css</name>
+	</action></block>
+	<block type="core/template" output="toHtml" name="core_content" template="SmartOsc/Hello/thai.phtml"/>
+	
+	</block>
+	</default>
+	<main_index_view>
+            
+    </main_index_view>
+</layout>

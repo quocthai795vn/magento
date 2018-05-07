@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <modules>
+       <SmartOSC_HelloWorld>
+           <version>0.0.1</version>
+       </SmartOSC_HelloWorld>
+   </modules>
+   <frontend>
+       <routers>
+           <SmartOSC_HelloWorld>
+               <use>standard</use>
+               <args>
+                   <module>SmartOSC_HelloWorld</module>
+                   <frontName>hello</frontName>
+               </args>
+           </SmartOSC_HelloWorld>
+       </routers>
+
+       <layout>
+         <updates>
+           <SmartOSC_HelloWorld>
+            
+             <file>local.xml</file>
+           </SmartOSC_HelloWorld>
+         </updates>
+       </layout>
+       
+   </frontend>
+   <global>
+      <resources>
+       <helloworld_setup>
+           <setup>
+               <module>SmartOSC_HelloWorld</module>
+               <class>SmartOSC_HelloWorld_Model_Resource_Setup</class>
+           </setup>
+       </helloworld_setup>
+     </resources>
+   <models>
+       <hello>
+           <class>SmartOSC_HelloWorld_Model</class>
+           <resourceModel>helloworld_resource</resourceModel>
+       </hello>
+       <helloworld_resource>
+           <class>SmartOSC_HelloWorld_Model_Resource</class>
+           <entities>
+               <blogpost>
+                   <table>fresher_contact</table>
+               </blogpost>
+           </entities>
+       </helloworld_resource>
+   </models>
+       </global>
+</config>
+
